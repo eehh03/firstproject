@@ -360,7 +360,6 @@
             height: 350px;
             margin: 0 auto;
             margin-top: 100px;
-            border: 1px solid #979797;
             box-shadow: 1px 1px 3px gray;
         }
         .box_title{
@@ -455,7 +454,7 @@
             margin-top: 20px;
             width: 1280px;
             height: 211px;
-            box-shadow: 1px 1px 5px #000;
+            box-shadow: 1px 1px 3px gray;
         }
         .section2_category>div{
             width: 423px;
@@ -616,25 +615,45 @@
         }
         .se3_content{
             margin: 0 auto;
+            list-style: none;
+            padding-top: 100px;
+        }
+        .se3_content>li{
+            display: inline-block;
         }
         .se3_c1{
-            position: ;
             width: 320px;
             height: 500px;
         }
         .se3_c2{
             width: 320px;
             height: 245px;
+            padding-bottom: 5px;
         }
         .se3_c3{
             width: 320px;
             height: 245px;
+            padding-top: 5px;
         }
         .se3_c4{
             width: 320px;
             height: 500px;
         }
         /* section 3 끝*/
+
+        /* section 4 시작*/
+        #section4{
+            background-color: #f9f9f9;
+            min-width: 1280px;
+            height: 700px;
+            padding: 100px 0;
+            margin: 0 auto;
+            text-align: center;
+            background-image: url("img/section4.jpg");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            /*opacity: 0;*/
+        }
     </style>
 </head>
 <body>
@@ -1218,32 +1237,44 @@
             <h1 style="font-weight:100;">THIS WEEK THE <span class="se3_main_span">BEST SELECTION</span> OF ITEMS & EVENT</h1>
 
             <!-- section3 contents 시작-->
-            <div class="se3_content">
-                <div class="se3_c1">
-                    <a href="#">
-                        <img src="img/banner1.jpg" alt="배너1" width="100%" height="100%">
-                    </a>
-                </div>
-                <div class="se3_c2">
-                    <a href="#">
-                        <img src="img/banner2.png" alt="배너1" width="100%" height="100%">
-                    </a>
-                </div>
-                <div class="se3_c3">
-                    <a href="#">
-                        <img src="img/banner3.png" alt="배너1" width="100%" height="100%">
-                    </a>
-                </div>
-                <div class="se3_c4">
-                    <a href="#">
-                        <img src="img/banner4.jpg" alt="배너1" width="100%" height="100%">
-                    </a>
-                </div>
-            </div>
+            <ul class="se3_content">
+                <li>
+                    <div class="se3_c1">
+                        <a href="#">
+                            <img src="img/banner1.jpg" alt="배너1" width="100%" height="100%">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="se3_c2">
+                        <a href="#">
+                            <img src="img/banner2.png" alt="배너2" width="100%" height="100%">
+                        </a>
+                    </div>
+                    <div class="se3_c3">
+                        <a href="#">
+                            <img src="img/banner3.png" alt="배너3" width="100%" height="100%">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="se3_c4">
+                        <a href="#">
+                            <img src="img/banner4.jpg" alt="배너3" width="100%" height="100%">
+                        </a>
+                    </div>
+                </li>
+            </ul>
             <!-- section3 contents 끝-->
         </div>
     </section>
     <!-- section 3 끝-->
+
+    <!-- section 4 시작-->
+    <section id="section4">
+
+    </section>
+    <!-- section 4 끝-->
     <script>
         $(document).ready(function(){
             var Trigger1 = false;
