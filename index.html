@@ -1404,36 +1404,36 @@
             });
             
             //스크롤 시 header fixed만들기 opacity 효과
-            //  $(window).scroll(function(){
-            //      if($('html').scrollTop() >= 500 && Trigger1 == false){
-            //          $('#section2').animate({"opacity":"1"},1000);
-            //          Trigger1 = true;
-            //      }
-            //     if($('html').scrollTop() >= 212){
-            //         $('.logo_nav').css({
-            //             "position":"fixed",
-            //             "top":50,
-            //             "border-top":"none",
-            //             "width":"100%"
-            //             });
-            //         $('.toggle_nav').css({
-            //             "position":"fixed",
-            //             "top":100
-            //         });
-            //     }else{
-            //         $('.logo_nav').css({
-            //             "position":"static",
-            //             "border-top":"3px solid black" 
-            //         });
-            //         $('.toggle_nav').css({
-            //             "position":"absolute",
-            //             "left":0,
-            //             "right":0,
-            //             "margin":"auto",
-            //             "top":313
-            //         });
-            //     }
-            // });
+             $(window).scroll(function(){
+                 if($('html').scrollTop() >= 500 && Trigger1 == false){
+                     $('#section2').animate({"opacity":"1"},1000);
+                     Trigger1 = true;
+                 }
+                if($('html').scrollTop() >= 212){
+                    $('.logo_nav').css({
+                        "position":"fixed",
+                        "top":50,
+                        "border-top":"none",
+                        "width":"100%"
+                        });
+                    $('.toggle_nav').css({
+                        "position":"fixed",
+                        "top":100
+                    });
+                }else{
+                    $('.logo_nav').css({
+                        "position":"static",
+                        "border-top":"3px solid black" 
+                    });
+                    $('.toggle_nav').css({
+                        "position":"absolute",
+                        "left":0,
+                        "right":0,
+                        "margin":"auto",
+                        "top":313
+                    });
+                }
+            });
             //스크롤 끝
 
             //카테고리 list 6개 FadeIn, FadeOut 설정
