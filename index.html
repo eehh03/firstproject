@@ -645,7 +645,6 @@
         #section4{
             background-color: #fff;
             min-width: 1280px;
-            height: 700px;
             padding: 100px 0;
             margin: 0 auto;
             text-align: center;
@@ -654,6 +653,15 @@
         .se4_title{
             font-size: 26px;
             color: #414040;
+            margin-bottom: 20px;
+        }
+        .se4_underline{
+            border: 1px solid #e2e2e2;
+            background-color: #e2e2e2;
+            width: 120px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
         .se4_content{
             margin: 50px;
@@ -695,6 +703,31 @@
         }
         .se4_caption p{
             padding-top: 10px;
+        }
+        #footer{
+            min-width: 1280px;
+            padding-left: 257px;
+            height: 130px;
+            overflow: hidden;
+            position: relative;
+            z-index: 9;
+            border-top:1px solid #e2e2e2;
+        }
+        #footer span{
+            color: #000;
+        }
+        .footer_title{
+            float: left;
+            width: 300px;
+            margin-top: 50px;
+        }
+        .footer_Content{
+            width: 640px;
+            line-height: 28px;
+            float: left;
+            margin-top: 35px;
+            font-size: 13px;
+            color: #a8a8a8;
         }
     </style>
 </head>
@@ -1316,6 +1349,7 @@
     <section id="section4">
         <div class="se4_main">
             <p class="se4_title">NEW ARRIVALS</p>
+            <hr class="se4_underline">
             <div class="se4_content">
                 <ul>
                     <li>
@@ -1395,6 +1429,19 @@
         </div>
     </section>
     <!-- section 4 끝-->
+    <!-- Footer 시작-->
+    <footer id="footer">
+        <div class="footer_title">
+            <a href="#">
+                <h1>SOSOHAM</h1>
+            </a>
+        </div>
+        <div class="footer_Content">
+                    <p>MANAGER <span>우정호</span> CALL CENTER <span>01062726430</span> EMAIL ADDRESS : <a href="mailto:somej@naver.com">우정호(somej@naver.com)</a></p>
+                    <p>COMPANY <span>SOSOHAM</span> BUSINESS REGISTRATION NO COPYRIGHT © <span>SOSOHAM</span>. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+    <!-- Footer 5 끝-->
     <script>
         $(document).ready(function(){
             var Trigger1 = false;
